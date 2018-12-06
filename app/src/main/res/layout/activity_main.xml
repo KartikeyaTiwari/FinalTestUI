@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/uplinner"
+        android:background="#FF1BD8C2"
+        android:layout_width="705dp"
+        android:layout_height="145dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="158dp"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+
+        <TextView
+            android:background="#00BFFF"
+            android:id="@+id/textView"
+            android:layout_width="196dp"
+            android:layout_height="match_parent"
+            android:text="Arrive Site and land-marks"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_margin="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:background="#00BFFF"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="Description if any" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="Date" />
+
+            <TextView
+                android:textSize="25dp"
+                android:id="@+id/textView3"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Location" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <EditText
+        android:background="#800080"
+        android:id="@+id/editText3"
+        android:layout_width="707dp"
+        android:layout_height="153dp"
+        android:layout_above="@+id/downlinner"
+        android:layout_below="@+id/uplinner"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginBottom="2dp"
+        android:text="Start from here your editing"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <LinearLayout
+        android:id="@+id/downlinner"
+        android:layout_width="709dp"
+        android:layout_height="137dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#9932CC"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+
+            android:layout_width="247dp"
+            android:layout_height="118dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btcorner"
+                android:text="Tap Card Here"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/btcorner"
+                android:text="Preview"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="247dp"
+            android:layout_height="118dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btcorner"
+                android:text="Save"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/btcorner"
+                android:text="CANCEL"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="318dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/editText3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF1BD83E"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="114dp"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="54dp"
+                android:text="Details Here "
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="114dp"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="54dp"
+                android:text="Details Here "
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="114dp"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="54dp"
+                android:text="Details Here "
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="114dp"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="54dp"
+                android:text="Details Here "
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="114dp"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="54dp"
+                android:text="Details Here "
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="114dp"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="54dp"
+                android:text="Details Here "
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="114dp"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="54dp"
+                android:text="Details Here "
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
